@@ -1,0 +1,90 @@
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    font-size: 12px;
+}
+
+thead {
+    background-color: #d8d8d8;
+}
+
+td, th {
+    padding: 5px;
+}
+
+.sort {
+    cursor: pointer;
+}
+
+.nosort {
+    cursor: default;
+}
+
+.sort:hover {
+    background-color: #b2b2b2;
+}
+
+.user_data {
+    position: relative;
+}
+
+.user_data a {
+    color: #1971ff;
+    text-decoration: none;
+}
+
+.user_data a:hover {
+    color: #f44;
+    text-decoration: underline;
+}
+
+.user-details {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 10px 20px;
+    width: 300px;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.user-details::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    transform: rotate(45deg);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+.user-details.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+tfoot tr td:first-child {
+    text-align: right;
+}
+
+#search {
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.nothing-found {
+    text-align: center;
+    font-weight: bold;
+}
